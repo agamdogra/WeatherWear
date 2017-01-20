@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:src="@drawable/agam"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/myImage"
+        android:layout_weight="0.28"
+        android:adjustViewBounds="false"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myImage"
+        android:layout_alignParentStart="true">
+
+
+    <TextView
+        android:text="@string/aboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myDescription"
+        android:textSize="20sp"
+        android:layout_below="@+id/myImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    </ScrollView>
+</RelativeLayout>

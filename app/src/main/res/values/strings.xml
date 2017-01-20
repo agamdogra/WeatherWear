@@ -1,0 +1,47 @@
+<resources>
+    <!--> Welcome Screen <!-->
+    <string name="app_name">Weather Wear</string>
+    <string name="welome">Welcome to Weather Wear</string>
+    <string name="select_option">Please select an option</string>
+    <string name="use_GPS">Use GPS</string>
+    <string name="use_city">Search By City</string>
+    <!--> Welcome Screen <!-->
+
+    <!--> SearchGPS <!-->
+    <string name="detecting">Detecting Location</string>
+    <string name="cancel">Cancel</string>
+    <!--> SearchGPS <!-->
+
+    <!--> SearchManually <!-->
+    <string name="EnterCityName">Enter City Name</string>
+    <string name="City">City</string>
+    <!--> SearchManually <!-->
+
+    <!--> Action Bar <!-->
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <!--> Action Bar <!-->
+
+    <!--> Weather Screen <!-->
+    <string name="aboutMe">My name is Agam Dogra: creator of Weather Wear. I am currently studying at Seneca College, Toronto, in the Software Development program.\n\nWeather Wear is intended to be an application that provides instant clothing suggestions to its user based on current weather conditions.\n\nFor any questions about the application, please email me at addogra@myseneca.ca \n\n\n</string>
+    <!--> Weather Screen <!-->
+
+    <!--> Settings <!-->
+    <string name="temperature">Temperature</string>
+    <string name="preference">Clothing Preference</string>
+    <string name="celsius">°C</string>
+    <string name="fahrenheit">°F</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <!--> Settings <!-->
+
+    <!--> Weather Screen <!-->
+    <string name="weatherIcon">Weather Icon</string>
+    <string name="weatherInfo">Loading Weather Information</string>
+    <string name="shoes">Shoes</string>
+    <string name="accessory">Accessory</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <!--> Weather Screen <!-->
+</resources>

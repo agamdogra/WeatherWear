@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/heading" />
+
+    <TextView
+        android:text="@string/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="58dp"
+        android:id="@+id/temperatureSetting"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/temperatureRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/heading"
+        android:layout_toEndOf="@+id/heading"
+        android:layout_marginTop="36dp">
+
+        <RadioButton
+            android:onClick="onRadioButtonClickedTemperature"
+            android:text="@string/fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fahrenheitRadio"
+            android:layout_alignBaseline="@+id/temperatureSetting"
+            android:layout_alignBottom="@+id/temperatureSetting"
+            android:layout_toEndOf="@+id/heading" />
+
+        <RadioButton
+            android:onClick="onRadioButtonClickedTemperature"
+            android:text="@string/celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/celsiusRadio"
+            android:layout_marginEnd="35dp"
+            android:layout_alignBaseline="@+id/fahrenheitRadio"
+            android:layout_alignBottom="@+id/fahrenheitRadio"
+            android:layout_alignParentEnd="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/preference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/temperatureSetting"
+        android:id="@+id/clothingPreferenceSetting" />
+
+    <RadioGroup
+        android:id="@+id/sexRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/heading"
+        android:layout_marginStart="17dp">
+        <RadioButton
+            android:onClick="onRadioButtonClickedSex"
+            android:text="@string/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/clothingPreferenceSetting"
+            android:layout_toEndOf="@+id/heading"
+            android:id="@+id/femaleRadio" />
+
+        <RadioButton
+            android:onClick="onRadioButtonClickedSex"
+            android:text="@string/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maleRadio"
+            android:layout_alignBaseline="@+id/femaleRadio"
+            android:layout_alignBottom="@+id/femaleRadio"
+            android:layout_toEndOf="@+id/femaleRadio" />
+    </RadioGroup>
+
+
+</RelativeLayout>
